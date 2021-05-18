@@ -1,6 +1,6 @@
-class Calculator:
+class CalculatorConstructor:
 
-    def dataset(self,first,second):
+    def __init__(self, first, second):
         self.first = first
         self.second = second
 
@@ -18,9 +18,6 @@ class Calculator:
 
 
 if __name__ == '__main__':
-    #c = Calculator()
-    #c.dataset(1, 2)
-    #print(c.add(), c.sub(), c.mul(), c.div())
+    c = CalculatorConstructor(1, 2)
+    print(c.add(), c.sub(), c.mul(), c.div())
 
-    print(add_function(2, 3))
-    print(sub_function(2, 3))
