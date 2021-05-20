@@ -31,9 +31,15 @@ class Contacs(object):
                 for i, j in enumerate(ls):
                     if j.name == del_name:
                         del ls[i]
+<<<<<<< HEAD
             elif menu == 4:
                 edit_name = input('수정할 이름')
                 edit_info = Contacs(edit_name, input('수정 전화번호'), input('수정 이메일'), input('수정 주소'))
+=======
+             elif menu == '4':
+                edit_name = input('수정할 이름: ')
+                edit_info = Contacts(edit_name, input('수정 전화번호'), input('수정 이메일'), input('수정 주소'))
+>>>>>>> ae9ac9ec489993cbbeff76f095073005b8803c82
                 for i, j in enumerate(ls):
                     if j.name == edit_name:
                         del ls[i]
